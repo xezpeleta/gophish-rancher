@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: "Gophish"
-  version: "v0.6-rancher3"
+  version: "latest-rancher1"
   description: "Open source phishing toolkit"
   minimum_rancher_version: v0.51.0
   questions:

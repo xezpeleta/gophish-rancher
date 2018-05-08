@@ -2,7 +2,7 @@ version: '2'
 
 services:  
   gophish:
-    image: matteoggl/gophish:0.6
+    image: matteoggl/gophish:latest
     volumes:
       - gophish_data:/opt
     ports:
