@@ -7,9 +7,9 @@ services:
       - gophish_data:/opt
   {{- if ne .Values.http_enabled "false"}}
     ports:
-      - ${{http_port}}:80/tcp
+      - ${http_port}:80/tcp
   {{- end}}
-      - ${{mgmt_port}}:3333/tcp
+      - ${mgmt_port}:3333/tcp
 
 volumes:
   gophish_data:
