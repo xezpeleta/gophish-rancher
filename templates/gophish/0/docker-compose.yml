@@ -1,0 +1,16 @@
+version: '2'
+
+services:  
+  gophish:
+    image: matteoggl/gophish:0.6
+    volumes:
+      - gophish_data:/opt
+  {{- if ne .Values.http_enabled "false"}}
+    ports:
+      - ${{http_port}}:80/tcp
+  {{- end}}
+      - ${{mgmt_port}}:3333/tcp
+
+volumes:
+  gophish_data:
+    driver: ${volume_driver}

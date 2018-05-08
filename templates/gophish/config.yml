@@ -1,0 +1,8 @@
+name: Gophish
+description: |
+  An open source phishing toolkit designed for businesses and penetration testers
+version: v0.1
+category: Security
+maintainer: Xabi Ezpeleta <xezpeleta@gmail.com>
+license: New-BSD
+projectURL: https://github.com/gophish/gophish
